@@ -20,6 +20,17 @@ export class AppMenuComponent implements OnInit {
                     { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] }
                 ]
             },
+                {
+                 label: 'Stock',
+                 items: [
+                   { label: 'Items', icon: 'pi pi-fw pi-id-card', routerLink: ['/stock/items'] },
+                   { label: 'Item Category', icon: 'pi pi-fw pi-check-square', routerLink: ['/stock/items-category'] },
+                   { label: 'Configuration', icon: 'pi pi-fw pi-check-square', routerLink: ['/stock/stock-configuration'],routerLinkActiveOptions: { paths: 'subset', queryParams: 'ignored', matrixParams: 'ignored', fragment: 'ignored' } },
+                   { label: 'Stock Users', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/input'] },
+                   { label: 'Stock Users', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/input'] },
+                 
+                ]
+            },
             {
                 label: 'UI Components',
                 items: [
