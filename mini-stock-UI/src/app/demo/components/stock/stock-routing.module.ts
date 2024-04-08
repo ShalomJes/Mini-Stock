@@ -5,6 +5,7 @@ import { StockItemCategoryComponent } from './stock-item-category/stock-item-cat
 import { StockConfigurationComponent } from './stock-configuration/stock-configuration.component';
 import { StockUsersComponent } from './stock-users/stock-users.component';
 import { RowsComponent } from './stock-configuration/rows/rows.component';
+import { ShelfsComponent } from './stock-configuration/shelfs/shelfs.component';
 
 @NgModule({
     imports: [RouterModule.forChild([
@@ -13,6 +14,7 @@ import { RowsComponent } from './stock-configuration/rows/rows.component';
         { path: 'stock-configuration', component:StockConfigurationComponent},
         { path: 'stock-users', component:StockUsersComponent},
         { path: 'rows', component:RowsComponent},
+        { path: 'Shelfs', component:ShelfsComponent},
 
     ])],
     exports: [RouterModule]
