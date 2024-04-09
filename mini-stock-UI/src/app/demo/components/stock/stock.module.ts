@@ -14,6 +14,16 @@ import { StockConfigurationComponent } from './stock-configuration/stock-configu
 import { ShelfsComponent } from './stock-configuration/shelfs/shelfs.component';
 import { RowsComponent } from './stock-configuration/rows/rows.component';
 import { StockUsersComponent } from './stock-users/stock-users.component';
+import { TabMenuModule } from 'primeng/tabmenu';
+import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { ButtonModule } from 'primeng/button';
+import { ContextMenuModule } from 'primeng/contextmenu';
+import { InputTextModule } from 'primeng/inputtext';
+import { MegaMenuModule } from 'primeng/megamenu';
+import { MenuModule } from 'primeng/menu';
+import { MenubarModule } from 'primeng/menubar';
+import { PanelMenuModule } from 'primeng/panelmenu';
+import { TieredMenuModule } from 'primeng/tieredmenu';
 
 @NgModule({
     declarations: [
@@ -26,8 +36,22 @@ import { StockUsersComponent } from './stock-users/stock-users.component';
         RowsComponent,
     ],
     imports: [
+        
+        CommonModule,
+		BreadcrumbModule,
+		MenubarModule,
+		TabMenuModule,
+		StepsModule,
+		TieredMenuModule,
+		MenuModule,
+		ButtonModule,
+		ContextMenuModule,
+		MegaMenuModule,
+		PanelMenuModule,
+		InputTextModule,
         CommonModule,
         StockRoutingModule,
+        
         SharedModule,
         TableModule,
         TabViewModule,
@@ -35,6 +59,8 @@ import { StockUsersComponent } from './stock-users/stock-users.component';
         ReactiveFormsModule,
         PaginatorModule,
         StepsModule,
+        TabMenuModule,
+        
     ],
 })
 export class StockModule {}
